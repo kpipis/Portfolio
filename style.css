@@ -1,0 +1,139 @@
+htmal {
+  font-size: 16px;
+}
+body {
+    background-color: lightgrey;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    transition: 1s;
+}
+
+hr {
+  height: 1px;
+  background: black;
+  width: 100%;
+}
+
+header {
+    font-weight: bold;
+}
+
+nav, main {
+    display: flex;
+}
+
+#darkMode {
+  display: flex;
+  position: absolute;
+  right: 1%;
+  top: 0.1%;
+  font-weight: normal;
+  font-size: 0.9rem;
+  /* margin-left: 60px; */
+}
+
+.homepage {
+    justify-content: space-between;
+}
+
+#profile {
+    height: 300px;
+    width: 200px;
+}
+
+#aboutMe {
+    width: 75%;
+    text-align: justify;
+    margin: 20px 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+#linkedin {
+  color: blue;
+}
+
+
+
+/**************Dark Mode Switch******************/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 2rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 76%;
+    width: 43%;
+    left: 6.7%;
+    bottom: 11.7%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 2rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /**************************************/
+
+  @media only screen and (max-width: 550px){
+    html{
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 550px) and (max-width: 850px){
+    html{
+      font-size: 13px;
+    }
+  }
